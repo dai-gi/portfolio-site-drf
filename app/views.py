@@ -9,10 +9,10 @@ class ProfileView(generics.ListAPIView):
 
 
 class ProductionView(generics.ListAPIView):
-    queryset = Profile.objects.all()
+    queryset = Production.objects.all()
     serializer_class = ProductionSerializer
 
 
 class ProductionDetailView(generics.RetrieveAPIView):
-    queryset = Profile.objects.all()
+    queryset = Production.objects.all()
     serializer_class = ProductionSerializer

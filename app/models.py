@@ -21,7 +21,7 @@ class Production(models.Model):
     skill = models.CharField('スキル', max_length=100)
     github = models.CharField('github', max_length=100, null=True, blank=True)
     url = models.CharField('URL', max_length=100, null=True, blank=True)
-    created = models.DateField('作成日時')
+    created = models.DateTimeField('作成日時')
     description = models.TextField('説明')
 
     def __str__(self):
